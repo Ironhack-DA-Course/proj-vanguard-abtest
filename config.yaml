@@ -1,5 +1,8 @@
-input_data:
-  file: "../data/raw/raw_data_file.csv"
-
-output_data:
-  file: "../data/clean/cleaned_data_file.csv"
+data:
+  raw:
+    file_demo: "../data/raw/df_final_demo.txt"
+    file_clients: "../data/raw/df_final_experiment_clients.txt"
+    file_web1: "../data/raw/df_final_web_data_pt_1.txt"
+    file_web2: "../data/raw/df_final_web_data_pt_2.txt"
+  clean:
+    file: "../data/clean/cleaned.csv"
