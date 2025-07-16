@@ -5,6 +5,9 @@ data:
     file_web1: "../data/raw/df_final_web_data_pt_1.txt"
     file_web2: "../data/raw/df_final_web_data_pt_2.txt"
     file_footprints: "../data/raw/df_footprints.csv"
+<<<<<<< HEAD
     file_demo_experiment: "../data/raw/df_final_demo_concat.csv"
+=======
+>>>>>>> main
   clean:
     file: "../data/clean/cleaned.csv"
