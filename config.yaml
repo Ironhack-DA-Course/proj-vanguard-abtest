@@ -8,8 +8,6 @@ data:
     file_demo_experiment: "../data/raw/df_final_demo_concat.csv"
   clean:
     file: "../data/clean/cleaned.csv"
-
-
     footprint_final_client_experiment_Cleaned: "../data/clean/final_client_experiment_Cleaned.csv"
     file_demo_experiment_cleaned: "../data/clean/df_final_demo_concat_cleaned.csv"
-
+    file_footprints_transformed: "../data/clean/df_footprints_transformed.csv"
