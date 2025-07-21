@@ -10,4 +10,4 @@ data:
     footprint_final_client_experiment_Cleaned: "../data/clean/final_client_experiment_Cleaned.csv"
     file_demo_experiment_cleaned: "../data/clean/df_final_demo_concat_cleaned.csv"
     file_footprints_transformed: "../data/clean/df_footprints_transformed.csv"
-    file_footprints_client_merged: "../data/clean/df_footprints_transformed_client_merged.csv"
+    file_confirm_footprints_client_merged: "../data/clean/df_confirm_footprints_client_merged.csv"
