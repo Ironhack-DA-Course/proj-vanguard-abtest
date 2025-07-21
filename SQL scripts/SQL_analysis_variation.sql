@@ -30,5 +30,21 @@ SELECT treatment_group, count(distinct client_id) as Number_of_clients ,round(ca
 from clients
 group by treatment_group;
 
-select * from visits
-
+-- 
+WITH average_secs AS (
+  SELECT * 
+  FROM visits 
+  WHERE client_id IN (
+    SELECT client_id 
+    FROM visits 
+    WHERE process_step = 'confirm' AND time_diff != '00:00:00'
+  )
+),
+seconds_cte AS (
+  SELECT *, ROUND(EXTRACT(EPOCH FROM time_diff)) AS seconds 
+  FROM average_secs
+  WHERE process_step = 'confirm'
+  ORDER BY seconds DESC
+)
+SELECT round(avg(EXTRACT(MINUTE FROM (seconds * INTERVAL '1 second'))),2) AS minutes
+FROM seconds_cte;
