@@ -1,0 +1,1527 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='df_footprints_transformed_client_merged_New' inline='true' name='federated.1o9zc6l0om1iap16sh4c21nv0box' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_footprints_transformed_client_merged_New' name='textscan.0s9tvs20nz6c9m14c820p1ocr2bp'>
+            <connection class='textscan' directory='C:/Downloadsall/Courses/Ironhack DA/Week5/proj-vanguard-abtest/data/clean' filename='df_footprints_transformed_client_merged_New.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0s9tvs20nz6c9m14c820p1ocr2bp' name='df_footprints_transformed_client_merged_New.csv' table='[df_footprints_transformed_client_merged_New#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='string' name='visitor_id' ordinal='1' />
+            <column datatype='string' name='visit_id' ordinal='2' />
+            <column datatype='string' name='process_step' ordinal='3' />
+            <column datatype='datetime' name='date_time' ordinal='4' />
+            <column datatype='string' name='treatment_group' ordinal='5' />
+            <column datatype='real' name='time_diff' ordinal='6' />
+            <column datatype='real' name='time_diff_relative' ordinal='7' />
+            <column datatype='real' name='time_diff_percent' ordinal='8' />
+            <column datatype='integer' name='client_tenure_year' ordinal='9' />
+            <column datatype='integer' name='client_tenure_month' ordinal='10' />
+            <column datatype='integer' name='client_age' ordinal='11' />
+            <column datatype='string' name='gender' ordinal='12' />
+            <column datatype='integer' name='num_accts' ordinal='13' />
+            <column datatype='real' name='balance' ordinal='14' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='15' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='16' />
+            <column datatype='string' name='treament_group' ordinal='17' />
+            <column datatype='string' name='client_age_group' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>treatment_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[treatment_group]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>treatment_group</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[time_diff]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>time_diff</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff_relative</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[time_diff_relative]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>time_diff_relative</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[time_diff_percent]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>time_diff_percent</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_tenure_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_tenure_year]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>client_tenure_year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_tenure_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_tenure_month]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>client_tenure_month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_age]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>client_age</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>treament_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[treament_group]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>treament_group</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[client_age_group]</local-name>
+            <parent-name>[df_footprints_transformed_client_merged_New.csv]</parent-name>
+            <remote-alias>client_age_group</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='df_footprints_transformed_client_merged_New.csv' datatype='table' name='[__tableau_internal_object_id__].[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]' role='measure' type='quantitative' />
+      <column caption='Age Grouping' datatype='string' name='[age_group]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[client_age]' new-bin='true'>
+          <bin default-name='false' value='&quot;Elder&quot;'>
+            <value>80</value>
+            <value>81</value>
+            <value>82</value>
+            <value>83</value>
+            <value>84</value>
+            <value>85</value>
+            <value>86</value>
+            <value>87</value>
+            <value>88</value>
+            <value>89</value>
+            <value>90</value>
+            <value>91</value>
+            <value>92</value>
+            <value>93</value>
+            <value>94</value>
+            <value>95</value>
+            <value>96</value>
+          </bin>
+          <bin default-name='false' value='&quot;Middle-aged&quot;'>
+            <value>35</value>
+            <value>36</value>
+            <value>37</value>
+            <value>38</value>
+            <value>39</value>
+            <value>40</value>
+            <value>41</value>
+            <value>42</value>
+            <value>43</value>
+            <value>44</value>
+            <value>45</value>
+            <value>46</value>
+            <value>47</value>
+            <value>48</value>
+            <value>49</value>
+            <value>50</value>
+            <value>51</value>
+            <value>52</value>
+            <value>53</value>
+            <value>54</value>
+          </bin>
+          <bin default-name='false' value='&quot;Old&quot;'>
+            <value>55</value>
+            <value>56</value>
+            <value>57</value>
+            <value>58</value>
+            <value>59</value>
+            <value>60</value>
+            <value>61</value>
+            <value>62</value>
+            <value>63</value>
+            <value>64</value>
+            <value>65</value>
+            <value>66</value>
+            <value>67</value>
+            <value>68</value>
+            <value>69</value>
+            <value>70</value>
+            <value>71</value>
+            <value>72</value>
+            <value>73</value>
+            <value>74</value>
+            <value>75</value>
+            <value>76</value>
+            <value>77</value>
+            <value>78</value>
+            <value>79</value>
+          </bin>
+          <bin default-name='false' value='&quot;Young&quot;'>
+            <value>17</value>
+            <value>18</value>
+            <value>19</value>
+            <value>20</value>
+            <value>21</value>
+            <value>22</value>
+            <value>23</value>
+            <value>24</value>
+            <value>25</value>
+            <value>26</value>
+            <value>27</value>
+            <value>28</value>
+            <value>29</value>
+            <value>30</value>
+            <value>31</value>
+            <value>32</value>
+            <value>33</value>
+            <value>34</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Balance' datatype='real' name='[balance]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Age' datatype='integer' name='[client_age]' role='measure' type='quantitative' />
+      <column caption='Client Age Group' datatype='string' name='[client_age_group]' role='dimension' type='nominal' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Client Tenure Month' datatype='integer' name='[client_tenure_month]' role='dimension' type='quantitative' />
+      <column caption='Client Tenure Year' datatype='integer' name='[client_tenure_year]' role='dimension' type='quantitative' />
+      <column caption='Date Time' datatype='datetime' name='[date_time]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='integer' name='[num_accts]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='Time Diff' datatype='real' name='[time_diff]' role='measure' type='quantitative' />
+      <column caption='Time Diff Percent' datatype='real' name='[time_diff_percent]' role='measure' type='quantitative' />
+      <column caption='Time Diff Relative' datatype='real' name='[time_diff_relative]' role='measure' type='quantitative' />
+      <column caption='Treament Group' datatype='string' name='[treament_group]' role='dimension' type='nominal' />
+      <column caption='Treatment Group' datatype='string' name='[treatment_group]' role='dimension' type='nominal' />
+      <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <column caption='Visitor Id' datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+      <column-instance column='[client_age_group]' derivation='None' name='[none:client_age_group:nk]' pivot='key' type='nominal' />
+      <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+      <column-instance column='[treament_group]' derivation='None' name='[none:treament_group:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Gast/AppData/Local/Temp/TableauTemp/#TableauTemp_0xzmtlz1yi06a0124vrdp1jem1oe.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/22/2025 04:40:01 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109752</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visitor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visitor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visitor_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>118019</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visit_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>126285</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_time</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>294959</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>treatment_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[treatment_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>treatment_group</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[time_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4254</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff_relative</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[time_diff_relative]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff_relative</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1819</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[time_diff_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff_percent</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_tenure_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_tenure_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_tenure_year</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_tenure_month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_tenure_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_tenure_month</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_age</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>139</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>12</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_accts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_accts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_accts</remote-alias>
+              <ordinal>13</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance</remote-alias>
+              <ordinal>14</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109752</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calls_6_mnth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calls_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calls_6_mnth</remote-alias>
+              <ordinal>15</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>logons_6_mnth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[logons_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>logons_6_mnth</remote-alias>
+              <ordinal>16</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>treament_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[treament_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>treament_group</remote-alias>
+              <ordinal>17</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[client_age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_age_group</remote-alias>
+              <ordinal>18</ordinal>
+              <family>df_footprints_transformed_client_merged_New.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:process_step:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;confirm&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;step_3&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;step_2&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;step_1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;start&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:client_age_group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;elder&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;young/adult&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;teenager&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;senior/old&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;middle-aged&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:treament_group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[age_group]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Elder&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Young&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Old&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Middle-aged&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[age_group]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Elder&quot;</bucket>
+            <bucket>&quot;Old&quot;</bucket>
+            <bucket>&quot;Middle-aged&quot;</bucket>
+            <bucket>&quot;Young&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:process_step:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;confirm&quot;</bucket>
+            <bucket>&quot;step_3&quot;</bucket>
+            <bucket>&quot;step_2&quot;</bucket>
+            <bucket>&quot;step_1&quot;</bucket>
+            <bucket>&quot;start&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='df_footprints_transformed_client_merged_New.csv' id='df_footprints_transformed_client_merged_New.csv_A966810030CC4FE1A2A03DF11C23ED86'>
+            <properties context=''>
+              <relation connection='textscan.0s9tvs20nz6c9m14c820p1ocr2bp' name='df_footprints_transformed_client_merged_New.csv' table='[df_footprints_transformed_client_merged_New#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='string' name='visitor_id' ordinal='1' />
+                  <column datatype='string' name='visit_id' ordinal='2' />
+                  <column datatype='string' name='process_step' ordinal='3' />
+                  <column datatype='datetime' name='date_time' ordinal='4' />
+                  <column datatype='string' name='treatment_group' ordinal='5' />
+                  <column datatype='real' name='time_diff' ordinal='6' />
+                  <column datatype='real' name='time_diff_relative' ordinal='7' />
+                  <column datatype='real' name='time_diff_percent' ordinal='8' />
+                  <column datatype='integer' name='client_tenure_year' ordinal='9' />
+                  <column datatype='integer' name='client_tenure_month' ordinal='10' />
+                  <column datatype='integer' name='client_age' ordinal='11' />
+                  <column datatype='string' name='gender' ordinal='12' />
+                  <column datatype='integer' name='num_accts' ordinal='13' />
+                  <column datatype='real' name='balance' ordinal='14' />
+                  <column datatype='integer' name='calls_6_mnth' ordinal='15' />
+                  <column datatype='integer' name='logons_6_mnth' ordinal='16' />
+                  <column datatype='string' name='treament_group' ordinal='17' />
+                  <column datatype='string' name='client_age_group' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Completion rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Completion rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_footprints_transformed_client_merged_New' name='federated.1o9zc6l0om1iap16sh4c21nv0box' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o9zc6l0om1iap16sh4c21nv0box'>
+            <column caption='Age Grouping' datatype='string' name='[age_group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[client_age]' new-bin='true'>
+                <bin default-name='false' value='&quot;Elder&quot;'>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>89</value>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>93</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle-aged&quot;'>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                </bin>
+                <bin default-name='false' value='&quot;Old&quot;'>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                </bin>
+                <bin default-name='false' value='&quot;Young&quot;'>
+                  <value>17</value>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Client Age' datatype='integer' name='[client_age]' role='measure' type='quantitative' />
+            <column-instance column='[process_step]' derivation='Count' name='[cnt:process_step:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[treatment_group]' derivation='Count' name='[cnt:treatment_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[treament_group]' derivation='None' name='[none:treament_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[treatment_group]' derivation='Count' name='[pcto:cnt:treatment_group:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[treament_group]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Time Diff' datatype='real' name='[time_diff]' role='measure' type='quantitative' />
+            <column caption='Treament Group' datatype='string' name='[treament_group]' role='dimension' type='nominal' />
+            <column caption='Treatment Group' datatype='string' name='[treatment_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]'>
+            <groupfilter function='level-members' level='[age_group]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]' included-values='in-range-or-null'>
+            <min>157</min>
+            <max>20900</max>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]'>
+            <groupfilter expression='MEDIAN([time_diff]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]'>
+            <groupfilter function='level-members' level='[none:treament_group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Control&quot;</bucket>
+              <bucket>&quot;Test&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]' value='159' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' />
+              <lod column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:treatment_group:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' />
+              <lod column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o9zc6l0om1iap16sh4c21nv0box].[pcto:cnt:treatment_group:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' />
+              <lod column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:treatment_group:qk] + [federated.1o9zc6l0om1iap16sh4c21nv0box].[pcto:cnt:treatment_group:qk:2])</rows>
+        <cols>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]</cols>
+      </table>
+      <simple-id uuid='{10FF88DD-180C-459A-B2E8-D163F29A3863}' />
+    </worksheet>
+    <worksheet name='Error rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Completion rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_footprints_transformed_client_merged_New' name='federated.1o9zc6l0om1iap16sh4c21nv0box' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o9zc6l0om1iap16sh4c21nv0box'>
+            <column caption='Age Grouping' datatype='string' name='[age_group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[client_age]' new-bin='true'>
+                <bin default-name='false' value='&quot;Elder&quot;'>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>89</value>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>93</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle-aged&quot;'>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                </bin>
+                <bin default-name='false' value='&quot;Old&quot;'>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                </bin>
+                <bin default-name='false' value='&quot;Young&quot;'>
+                  <value>17</value>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Client Age' datatype='integer' name='[client_age]' role='measure' type='quantitative' />
+            <column-instance column='[process_step]' derivation='Count' name='[cnt:process_step:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[treament_group]' derivation='None' name='[none:treament_group:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Time Diff' datatype='real' name='[time_diff]' role='measure' type='quantitative' />
+            <column caption='Treament Group' datatype='string' name='[treament_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]'>
+            <groupfilter function='level-members' level='[age_group]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]' included-values='in-range-or-null'>
+            <min>157</min>
+            <max>20900</max>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]'>
+            <groupfilter expression='MEDIAN([time_diff]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]'>
+            <groupfilter function='level-members' level='[none:treament_group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]' value='159' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7D69C3E-3ACD-4A1A-9CAB-5835109ED48A}' />
+    </worksheet>
+    <worksheet name='Time spent'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Time spent</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_footprints_transformed_client_merged_New' name='federated.1o9zc6l0om1iap16sh4c21nv0box' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o9zc6l0om1iap16sh4c21nv0box'>
+            <column caption='Age Grouping' datatype='string' name='[age_group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[client_age]' new-bin='true'>
+                <bin default-name='false' value='&quot;Elder&quot;'>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>89</value>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>93</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle-aged&quot;'>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                </bin>
+                <bin default-name='false' value='&quot;Old&quot;'>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                </bin>
+                <bin default-name='false' value='&quot;Young&quot;'>
+                  <value>17</value>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Client Age' datatype='integer' name='[client_age]' role='measure' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[treatment_group]' derivation='None' name='[none:treatment_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[time_diff]' derivation='Median' name='[pcrk:med:time_diff:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+            </column-instance>
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Time Diff' datatype='real' name='[time_diff]' role='measure' type='quantitative' />
+            <column caption='Treatment Group' datatype='string' name='[treatment_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[age_group]' member='&quot;Old&quot;' />
+              <groupfilter function='member' level='[age_group]' member='&quot;Young&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]'>
+            <groupfilter expression='MEDIAN([time_diff]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' />
+                <groupfilter function='member' level='[none:process_step:nk]' member='&quot;step_1&quot;' />
+                <groupfilter function='member' level='[none:process_step:nk]' member='&quot;step_2&quot;' />
+                <groupfilter function='member' level='[none:process_step:nk]' member='&quot;step_3&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treatment_group:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:treatment_group:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:treatment_group:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]</column>
+            <column>[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treatment_group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[pcrk:med:time_diff:qk]' scope='rows' value='Time Diff (Median)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' value='42' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o9zc6l0om1iap16sh4c21nv0box].[pcrk:med:time_diff:qk]</rows>
+        <cols>([federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk] / ([federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group] / [federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treatment_group:nk]))</cols>
+      </table>
+      <simple-id uuid='{EF33B784-8C73-46FF-8FC7-CB1D219264C2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Completion rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='146'>
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' type='filter' />
+            <card pane-specification-id='7' param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{93A8F38E-AF8D-468D-96F4-0CB87484B6DA}' />
+    </window>
+    <window class='worksheet' name='Time spent'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='147'>
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99C73697-8B49-4822-8271-6AF058B1E21F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Error rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='144'>
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[cnt:process_step:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:treament_group:nk]' type='filter' />
+            <card param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[none:process_step:nk]' type='filter' />
+            <card pane-specification-id='6' param='[federated.1o9zc6l0om1iap16sh4c21nv0box].[age_group]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F6066D8F-EC4A-4ECF-900A-2C3F42984CFD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Error rate' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACvUlEQVR4nO3YP2rUQRiA4e+3uyGClRJ7K0FJq614ipxAT+UJBL1B8AABC/80yprKwjSi
+      pSBrEQsjlmII7/PAwMwwxTRvMbPsdrvdQNTqsi8Al0kApG1+X7zefp63p2ezWpY5enRvvj5/
+      MTMz1w4PZ3P9y/z49GpmWc/mwZM53n6YmZk7B7fm9o2b///m8A9cCODNx7N59vLdrFbLHD28
+      O99+BbDs7c1ycDrfT57OrPdndf/xHG/fz8zM/mYtAK6sCwEsy8wy5+N8svxxfPnLHlxdi18g
+      yjyCSRMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SPsJJ+QoPLXeFdMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
