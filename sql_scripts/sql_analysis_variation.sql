@@ -48,3 +48,6 @@ seconds_cte AS (
 )
 SELECT round(avg(EXTRACT(MINUTE FROM (seconds * INTERVAL '1 second'))),2) AS minutes
 FROM seconds_cte;
+
+
+SELECT * FROM  visits
