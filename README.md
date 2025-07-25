@@ -16,10 +16,9 @@ They came to us with the question: Would these changes encourage more clients to
 ## Datasets Used
 
 We have received 4 files with raw data.
-
-**Client Profiles (df_final_demo):** Demographics like age, gender, and account details of Vanguard's clients.
-**Digital Footprints (df_final_web_data):** A detailed trace of client interactions online, divided into two parts: pt_1 and pt_2.
-**Experiment Roster (df_final_experiment_clients):** A list revealing which clients were part of the grand experiment.
+ *  **Client Profiles (df_final_demo):** Demographics like age, gender, and account details of Vanguard's clients.
+ *  **Digital Footprints (df_final_web_data):** A detailed trace of client interactions online, divided into two parts: pt_1 and pt_2.
+ *  **Experiment Roster (df_final_experiment_clients):** A list revealing which clients were part of the grand experiment.
 
 At the same time, we were provided with a Metadata(dictionary) to help us understand the content of the columns in each file and guide us through the analysis
 
@@ -73,27 +72,27 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
 1.  **Data Acquisition:** Datasets were downloaded from Github.
 2.  **Data Merging:** As recommended we merged the two files df_final_web_data_pt_1 and df_final_web_data_pt_2. We also merged the final df_final_web_data with the file df_final_experiment_clients and the file df_final_demo with df_final_experiment_clients. They idea behind this was that since we will not be using SQL for the annalysis and all will eb done in Python we decided to have all data in fewer files.
 3. **Data Cleaning:**  
-* Duplicates
-* Customers not participating in the experiment
-* Standardization of the columns name
-* Altering data types
-* Standardization of gender
-* Fill nun client age with median
+    * Duplicates
+    * Customers not participating in the experiment
+    * Standardization of the columns name
+    * Altering data types
+    * Standardization of gender
+    * Fill nun client age with median
 
 4. **Data Transformation:** 
-* Filtering the large datasets to create a relevant sub-dataset containing only clients that were part of the experiment, with a defined age and .
-* Transforming datasets to some suitable datasets for evaluation the KPIs 
-* Creatiing new columns like: time_diff and time_diff_relative.
+    * Filtering the large datasets to create a relevant sub-dataset containing only clients that were part of the experiment, with a defined age and .
+    * Transforming datasets to some suitable datasets for evaluation the KPIs 
+    * Creatiing new columns like: time_diff and time_diff_relative.
 
 5.  **Analysis Techniques:**
-* Generic EDA using EDA Univariate
-* Insight EDA for evaluatin the KPIS, Hypothesis
-* Verification results by using different Python vs SQL
-* Hypothesis Testing
+    * Generic EDA using EDA Univariate
+    * Insight EDA for evaluatin the KPIS, Hypothesis
+    * Verification results by using different Python vs SQL
+    * Hypothesis Testing
 
 6.  **Data visualization:**
-* Importing data into Tableau to create some interactive charts
-* Buiding the dashboard and story
+    * Importing data into Tableau to create some interactive charts
+    * Buiding the dashboard and story
 
   **Data Analysis Tools and Libraries:**
     * **Python:** The primary programming language for data manipulation and analysis.
