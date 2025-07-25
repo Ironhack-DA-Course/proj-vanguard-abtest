@@ -4,11 +4,10 @@
 
 In this project we are analyzing the data of Vanguard, a well-known investment management company that offers a wide range of services to investors, including mutual funds, ETFs, brokerage services, and financial advice.
 
-We will be acting as a data analyst in the Customer Experience (CX) team. Previously the team launched an exciting digital experiment, and now, they're eagerly waiting to uncover the results of it. They have created what they considered to be a more intuitive and modern User Interface (UI), coupled with timely in-context prompts (cues, messages, hints, or instructions provided to users directly within the context of their current task or action). They expect that this cahnge could make the online process smoother for clients. They came to us with the question: Would these changes encourage more clients to complete the process?
+We will be acting as a data analyst in the Customer Experience (CX) team. Previously the team launched an exciting digital experiment, and now, they're eagerly waiting to uncover the results of it. They have created what they considered to be a more intuitive and modern User Interface (UI) and expect that this change could make the online process smoother for clients.
+They came to us with the question: Would these changes encourage more clients to complete the process?
 
-We start the annalysis with the hypotesis that indeed this change is making the process smother and better for the users and adding that assumption that younger clients (under 35 years of age) are be faster finishing the process when compared to older clients (over 55 years of age).
 
-We have received 4 files with raw data.
 - 🛠 GitHub Repository: [proj-vanguard-abtest](https://github.com/Ironhack-DA-Course/proj-vanguard-abtest)
 - 📋 Trello Board: [Project Tasks & Timeline](https://trello.com/invite/b/68751183d6cf473274092116/ATTIb3df2659c78efc7dad8a19f1e4f4fd93F9481019/vanguard) 
 - 🖼 Dashboard: `visuals/visuals_experiment_evaluation.twb`
@@ -16,12 +15,11 @@ We have received 4 files with raw data.
 
 ## Datasets Used
 
+We have received 4 files with raw data.
 
 **Client Profiles (df_final_demo):** Demographics like age, gender, and account details of Vanguard's clients.
 **Digital Footprints (df_final_web_data):** A detailed trace of client interactions online, divided into two parts: pt_1 and pt_2.
 **Experiment Roster (df_final_experiment_clients):** A list revealing which clients were part of the grand experiment.
-
-The raw files are available here: https://github.com/data-bootcamp-v4/lessons/tree/main/5_6_eda_inf_stats_tableau/project/files_for_project
 
 At the same time, we were provided with a Metadata(dictionary) to help us understand the content of the columns in each file and guide us through the analysis
 
@@ -82,18 +80,18 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
 * Standardization of gender
 * Fill nun client age with median
 
-3. **Data Transformation:** 
+4. **Data Transformation:** 
 * Filtering the large datasets to create a relevant sub-dataset containing only clients that were part of the experiment, with a defined age and .
 * Transforming datasets to some suitable datasets for evaluation the KPIs 
 * Creatiing new columns like: time_diff and time_diff_relative.
 
-4.  **Analysis Techniques:**
+5.  **Analysis Techniques:**
 * Generic EDA using EDA Univariate
 * Insight EDA for evaluatin the KPIS, Hypothesis
 * Verification results by using different Python vs SQL
 * Hypothesis Testing
 
-5.  **Data visualization:**
+6.  **Data visualization:**
 * Importing data into Tableau to create some interactive charts
 * Buiding the dashboard and story
 
@@ -103,3 +101,18 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
     * **Matplotlib / Seaborn:** Used for creating various visualizations (bar charts, line graphs).
     * **unidecode & unicodedata:** Python libraries crucial for handling and normalizing special characters.
     * **SQL Workbench:** Used for initial data exploration and potential querying.
+
+##  Repository Structure
+
+```
+proj-vanguard-abtest/
+├── data/                        # Raw and cleaned CSV files
+├── figures/                     # Sketching of structure in dataset
+├── notebooks/                   # Python notebooks with analysis
+├── sql_scripts/                 # SQL analysis
+├── README.md                    # This file
+├── visuals_tableau              # Tableau workbooks
+└── slides                       # Url of presentation
+```
+## 👥 Team Members
+__*Robert, Miguel, Jesus*__
