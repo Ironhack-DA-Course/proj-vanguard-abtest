@@ -2,19 +2,29 @@ import pandas as pd
 import numpy as np
 
 def map_group_age(age: int):
-    if age in range(0,6):
-        return "toddler"
-    elif age in range(6,19):
-        return "teenager"
-    elif age in range(19,35):
+    
+    if age in range(17,35):
         return "young"
-    elif age in range(36,56):
-        return "middle-aged"
-    elif age in range(56,80):
-        return "old"
-    elif age >= 80:
-        return "elder" 
+    elif age in range(35,56):
+        return "middle-aged"  
+    elif age >= 55:
+        return "old" 
     else: return "NA"
+
+# def map_group_age(age: int):
+#     if age in range(0,6):
+#         return "toddler"
+#     elif age in range(6,19):
+#         return "teenager"
+#     elif age in range(19,35):
+#         return "young"
+#     elif age in range(36,56):
+#         return "middle-aged"
+#     elif age in range(56,80):
+#         return "old"
+#     elif age >= 80:
+#         return "elder" 
+#     else: return "NA"
 
 def calculate_error_rate(group):
     step_order = ['start', 'step_1', 'step_2', 'step_3', 'complete']
