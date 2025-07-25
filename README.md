@@ -4,14 +4,14 @@
 
 In this project we are analyzing the data of Vanguard, a well-known investment management company that offers a wide range of services to investors, including mutual funds, ETFs, brokerage services, and financial advice.
 
-We will be acting as a data analyst in the Customer Experience (CX) team. Previously the team launched an exciting digital experiment, and now, they're eagerly waiting to uncover the results of it. They have created what they considered to be a more intuitive and modern User Interface (UI) and expect that this change could make the online process smoother for clients.
+We will be acting as a data analyst in the Customer Experience (UX) team. Previously the team launched an exciting digital experiment, and now, they're eagerly waiting to uncover the results of it. They have created what they considered to be a more intuitive and modern User Interface (UI) and expect that this change could make the online process smoother for clients.
 They came to us with the question: Would these changes encourage more clients to complete the process?
 
 
 - 🛠 GitHub Repository: [proj-vanguard-abtest](https://github.com/Ironhack-DA-Course/proj-vanguard-abtest)
 - 📋 Trello Board: [Project Tasks & Timeline](https://trello.com/invite/b/68751183d6cf473274092116/ATTIb3df2659c78efc7dad8a19f1e4f4fd93F9481019/vanguard) 
 - 🖼 Dashboard: `visuals/visuals_experiment_evaluation.twb`
-- Presentation: [Air Canada Loyalty](https://docs.google.com/presentation/d/1Hqo7kqqzuMMcIIki_kKuiHLjNlK-uO-ejXNlIs0ey2Q/edit?usp=sharing) 
+- Presentation: [proj-vanguard-abtest](https://docs.google.com/presentation/d/1Hqo7kqqzuMMcIIki_kKuiHLjNlK-uO-ejXNlIs0ey2Q/edit?usp=sharing) 
 
 ## Datasets Used
 
