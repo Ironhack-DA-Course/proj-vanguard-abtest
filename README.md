@@ -10,8 +10,8 @@ They came to us with the question: Would these changes encourage more clients to
 
 - 🛠 GitHub Repository: [proj-vanguard-abtest](https://github.com/Ironhack-DA-Course/proj-vanguard-abtest)
 - 📋 Trello Board: [Project Tasks & Timeline](https://trello.com/invite/b/68751183d6cf473274092116/ATTIb3df2659c78efc7dad8a19f1e4f4fd93F9481019/vanguard) 
-- 🖼 Dashboard: `visuals/visuals_experiment_evaluation.twb`
-- Presentation: [proj-vanguard-abtest](https://docs.google.com/presentation/d/1Hqo7kqqzuMMcIIki_kKuiHLjNlK-uO-ejXNlIs0ey2Q/edit?usp=sharing) 
+- 🖼 Dashboard: `visuals/`
+- Presentation: [proj-vanguard-abtest](https://docs.google.com/presentation/d/1RtJqU4qDMpGSEEwGB23KhOeeuRuL2iFOF-Sh5pPlnXY/view) 
 
 ## Datasets Used
 
@@ -95,11 +95,11 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
     * Buiding the dashboard and story
 
   **Data Analysis Tools and Libraries:**
-    * **Python:** The primary programming language for data manipulation and analysis.
-    * **Pandas:** Essential for data loading, cleaning, and transformation.
-    * **Matplotlib / Seaborn:** Used for creating various visualizations (bar charts, line graphs).
-    * **unidecode & unicodedata:** Python libraries crucial for handling and normalizing special characters.
-    * **SQL Workbench:** Used for initial data exploration and potential querying.
+* __Python__: The primary programming language for data manipulation and analysis.
+* __Pandas__:Essential for data loading, cleaning, and transformation.
+* __Matplotlib / Seaborn__: Used for creating various visualizations (bar charts, line graphs).
+* __Unidecode & Unicodedata__: Python libraries crucial for handling and normalizing special characters.
+* __SQL Workbench__: Used for initial data exploration and potential querying.
 
 ##  Repository Structure
 
