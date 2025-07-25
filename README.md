@@ -1,4 +1,4 @@
-# Vanguard project (name pending)
+# Vanguard A/B-Testing
 
 ## Introduction
 
