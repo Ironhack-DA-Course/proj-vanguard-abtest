@@ -11,7 +11,7 @@ We start the annalysis with the hypotesis that indeed this change is making the 
 We have received 4 files with raw data.
 - 🛠 GitHub Repository: [proj-vanguard-abtest](https://github.com/Ironhack-DA-Course/proj-vanguard-abtest)
 - 📋 Trello Board: [Project Tasks & Timeline](https://trello.com/invite/b/68751183d6cf473274092116/ATTIb3df2659c78efc7dad8a19f1e4f4fd93F9481019/vanguard) 
-- 🖼 Tableau: `visuals/visuals_experiment_evaluation.twb`
+- 🖼 Dashboard: `visuals/visuals_experiment_evaluation.twb`
 - Presentation: [Air Canada Loyalty](https://docs.google.com/presentation/d/1Hqo7kqqzuMMcIIki_kKuiHLjNlK-uO-ejXNlIs0ey2Q/edit?usp=sharing) 
 
 ## Datasets Used
@@ -84,7 +84,7 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
 
 3. **Data Transformation:** 
 * Filtering the large datasets to create a relevant sub-dataset containing only clients that were part of the experiment, with a defined age and .
-* Transforming datasets to some suitable datasets for evaluation the KPIs and Hypothesis
+* Transforming datasets to some suitable datasets for evaluation the KPIs 
 * Creatiing new columns like: time_diff and time_diff_relative.
 
 4.  **Analysis Techniques:**
@@ -95,7 +95,8 @@ Our methodology involved several key steps, focusing on filtering, data cleaning
 
 5.  **Data visualization:**
 * Importing data into Tableau to create some interactive charts
-* 
+* Buiding the dashboard and story
+
   **Data Analysis Tools and Libraries:**
     * **Python:** The primary programming language for data manipulation and analysis.
     * **Pandas:** Essential for data loading, cleaning, and transformation.
